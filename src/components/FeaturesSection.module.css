@@ -1,0 +1,121 @@
+.features {
+  padding: 6rem 3rem;
+  background-color: #f8fbfd; /* Latar belakang abu-abu sangat muda */
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 3.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.sectionSubtitle {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kolom adaptif */
+  gap: 2.5rem; /* Jarak antar kartu lebih besar */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px; /* Border radius lebih besar */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Shadow lebih nyata */
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid #e0e0e0; /* Border halus */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureCard:hover {
+  transform: translateY(-10px); /* Efek melayang lebih dramatis */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.iconContainer {
+  font-size: 3.8rem; /* Ukuran ikon lebih besar */
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: #e0f2ff; /* Latar belakang ikon */
+  border-radius: 50%; /* Bentuk lingkaran */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1);
+}
+
+.featureTitle {
+  font-size: 1.8rem; /* Ukuran judul fitur */
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.featureDescription {
+  font-size: 1.05rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+@media (max-width: 1200px) {
+  .sectionTitle {
+    font-size: 3rem;
+  }
+  .sectionSubtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    padding: 4rem 1.5rem;
+  }
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+  .sectionSubtitle {
+    font-size: 1.1rem;
+  }
+  .featureGrid {
+    gap: 1.5rem;
+  }
+  .featureCard {
+    padding: 2rem;
+  }
+  .iconContainer {
+    font-size: 3.2rem;
+    width: 80px;
+    height: 80px;
+  }
+  .featureTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .sectionSubtitle {
+    font-size: 1rem;
+  }
+}
