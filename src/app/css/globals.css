@@ -14,13 +14,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --tw-gradient-to: var(--color-blue-50)
     --foreground: #ededed;
+    
   }
 }
 
 body {
-  background: var(--background);
+  background: var(--tw-gradient-to);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

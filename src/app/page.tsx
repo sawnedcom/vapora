@@ -1,10 +1,10 @@
-import React from 'react';
-import Header from '../components/Header';
-import HeroSection from '../components/HeroSection';
-import FeaturesSection from '../components/FeaturesSection';
-import TestimonialSection from '../components/TestimonialSection';
-import PricingSection from '../components/PricingSection';
-import Footer from '../components/Footer';
+import React from "react";
+import Header from "../components/ts/Header";
+import HeroSection from "../components/ts/HeroSection";
+import FeaturesSection from "../components/ts/FeaturesSection";
+import TestimonialSection from "../components/ts/TestimonialSection";
+import PricingSection from "../components/ts/PricingSection";
+import Footer from "../components/ts/Footer";
 
 export default function HomePage() {
   return (

@@ -1,59 +1,48 @@
-import type { Metadata } from 'next'; // Import type Metadata
-import { Poppins } from 'next/font/google'; // Import Poppins dari next/font/google
-import './css/globals.css'; // Import global CSS Anda
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import "./css/globals.css";
 
-// Konfigurasi font Poppins
-// Sesuaikan 'weight' sesuai kebutuhan Anda.
-// 'subsets' 'latin' adalah yang paling umum.
 const poppins = Poppins({
-  weight: ['300', '400', '500', '600', '700'], // Pilih bobot font yang akan Anda gunakan
-  subsets: ['latin'],
-  display: 'swap', // 'swap' akan menampilkan font default dulu, lalu ganti ke Poppins setelah dimuat
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
-// Metadata untuk SEO
-// Ini akan muncul di <head> HTML
 export const metadata: Metadata = {
-  title: 'ProdukX - Revolusi Belajar Anda', // Judul utama situs Anda
-  description: 'Platform inovatif yang dirancang untuk meningkatkan produktivitas dan pemahaman Anda.', // Deskripsi singkat situs Anda
-  keywords: ['produkX', 'belajar', 'inovasi', 'produktivitas', 'platform'], // Kata kunci relevan
-  authors: [{ name: 'Tim ProdukX' }], // Penulis atau tim
-  creator: 'Nama Anda / Perusahaan Anda', // Pembuat situs
-  publisher: 'Nama Anda / Perusahaan Anda', // Penerbit situs
+  title: "ProdukX - Revolutionize Your Learning",
+  description: "An innovative platform designed to boost your productivity and understanding.",
+  keywords: ["ProdukX", "learning", "innovation", "productivity", "platform"],
+  authors: [{ name: "ProdukX Team" }],
+  creator: "Your Name or Company",
+  publisher: "Your Name or Company",
   openGraph: {
-    title: 'ProdukX - Revolusi Belajar Anda',
-    description: 'Platform inovatif yang dirancang untuk meningkatkan produktivitas dan pemahaman Anda.',
-    url: 'https://www.yourdomain.com', // Ganti dengan domain asli Anda
-    siteName: 'ProdukX',
+    title: "ProdukX - Revolutionize Your Learning",
+    description: "An innovative platform designed to boost your productivity and understanding.",
+    url: "https://www.yourdomain.com",
+    siteName: "ProdukX",
     images: [
       {
-        url: 'https://www.yourdomain.com/og-image.jpg', // Ganti dengan URL gambar OG Anda
+        url: "https://www.yourdomain.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: 'ProdukX Landing Page',
+        alt: "ProdukX Landing Page",
       },
     ],
-    locale: 'id_ID',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'ProdukX - Revolusi Belajar Anda',
-    description: 'Platform inovatif yang dirancang untuk meningkatkan produktivitas dan pemahaman Anda.',
-    creator: '@yourtwitterhandle', // Ganti dengan Twitter handle Anda
-    images: ['https://www.yourdomain.com/twitter-image.jpg'], // Ganti dengan URL gambar Twitter Anda
+    card: "summary_large_image",
+    title: "Vapora - Revolutionize Your Learning",
+    description: "An innovative platform designed to boost your productivity and understanding.",
+    creator: "@yourtwitterhandle",
+    images: ["https://www.yourdomain.com/twitter-image.jpg"],
   },
 };
 
-// RootLayout adalah komponen utama yang membungkus seluruh aplikasi Anda
-export default function RootLayout({
-  children, // children adalah komponen halaman Anda (misalnya page.tsx)
-}: {
-  children: React.ReactNode; // Tipe untuk children
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id">
-      {/* Menerapkan font Poppins ke seluruh body */}
+    <html lang="en">
       <body className={poppins.className}>{children}</body>
     </html>
   );
