@@ -63,7 +63,7 @@ const PricingCard: React.FC<{ plan: PricingPlan; index: number }> = ({ plan, ind
           ))}
         </ul>
       </div>
-      <motion.button className={`mt-6 sm:mt-8 w-full px-4 sm:px-6 py-2 sm:py-3 rounded-xl text-white font-semibold text-base sm:text-lg transition-all duration-300 ${plan.isFeatured ? "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700" : "bg-gray-700 hover:bg-gray-800"} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} aria-label={`Choose the ${plan.name} plan`}>
+      <motion.button className={`cursor-pointer mt-6 sm:mt-8 w-full px-4 sm:px-6 py-2 sm:py-3 rounded-xl text-white font-semibold text-base sm:text-lg transition-all duration-300 ${plan.isFeatured ? "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700" : "bg-gray-700 hover:bg-gray-800"} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} aria-label={`Choose the ${plan.name} plan`}>
         Choose This Plan
       </motion.button>
     </motion.div>

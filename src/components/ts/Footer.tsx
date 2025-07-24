@@ -3,6 +3,7 @@
 
 import React from "react";
 import { Facebook, X, Instagram, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -56,7 +57,9 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <p className="text-gray-500 text-sm text-center">&copy; {currentYear} Vapora. All rights reserved. sawnedcom</p>
+        <p className="text-gray-500 text-sm text-center">
+          &copy; {currentYear} Vapora. All rights reserved. <Link className="border-b text-white" href="https://github.com/sawnedcom">sawnedcom</Link>
+        </p>
 
         {/* Back to Top */}
         <button onClick={scrollToTop} className="mt-4 text-xs text-gray-400 hover:text-white flex items-center gap-1 transition-colors">
