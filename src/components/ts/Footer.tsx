@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Facebook, X, Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -26,7 +26,7 @@ export default function Footer() {
             <Facebook className="w-5 h-5 text-gray-300 group-hover:text-white" />
           </a>
           <a href="#" aria-label="Twitter" className="p-3 bg-gray-800 hover:bg-sky-500 rounded-full transition-all duration-300 group">
-            <Twitter className="w-5 h-5 text-gray-300 group-hover:text-white" />
+            <X className="w-5 h-5 text-gray-300 group-hover:text-white" />
           </a>
           <a href="#" aria-label="Instagram" className="p-3 bg-gray-800 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 rounded-full transition-all duration-300 group">
             <Instagram className="w-5 h-5 text-gray-300 group-hover:text-white" />
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <p className="text-gray-500 text-sm text-center">&copy; {currentYear} Vapora. All rights reserved.</p>
+        <p className="text-gray-500 text-sm text-center">&copy; {currentYear} Vapora. All rights reserved. sawnedcom</p>
 
         {/* Back to Top */}
         <button onClick={scrollToTop} className="mt-4 text-xs text-gray-400 hover:text-white flex items-center gap-1 transition-colors">
