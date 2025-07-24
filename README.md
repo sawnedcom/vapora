@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ProdukX - Professional Landing Page
+(Replace hero-illustration.png with the actual filename of your hero image in the public/images/ folder. The image above is just an example; you can use one I generated or your own chosen image.)
 
-## Getting Started
+ProdukX is a modern and professional landing page built with Next.js 14 (App Router) and styled using Tailwind CSS. Designed to highlight innovative products, this landing page focuses on an intuitive user experience, fast performance, and SEO optimization.
 
-First, run the development server:
+Key Features
+Next.js 14 (App Router): Leverages the latest Next.js features for efficient routing, Server Components, and optimal performance.
 
-```bash
+Tailwind CSS: A utility-first CSS framework for rapidly building custom and responsive designs without writing excessive custom CSS.
+
+Poppins Font: Utilizes the Poppins font from Google Fonts for a modern and clean aesthetic.
+
+Modular Components: Clean code structure with reusable components for each section of the landing page (Header, Hero, Features, Testimonials, Pricing, Footer).
+
+Responsive Design: Adaptive design that looks great on various screen sizes and devices (desktop, tablet, mobile).
+
+SEO Optimization: Configured with Next.js Metadata to enhance search engine and social media visibility.
+
+Static Site Generation (SSG): Exported as static HTML, making it perfect for free hosting solutions like GitHub Pages with superior performance.
+
+Installation & Local Setup
+Follow the steps below to get the project running on your local machine.
+
+Prerequisites
+Make sure you have Node.js (LTS version recommended) and npm or Yarn installed.
+
+Steps
+Clone the Repository:
+
+Bash
+
+git clone https://github.com/USERNAME/your-repository-name.git
+cd your-repository-name
+(Replace USERNAME and your-repository-name with your actual GitHub repository information)
+
+Install Dependencies:
+
+Bash
+
+npm install
+# or
+yarn install
+Run the Development Server:
+
+Bash
+
 npm run dev
 # or
 yarn dev
+Open http://localhost:3000 in your browser to view the project.
+
+Project Structure
+/
+├── public/                 # Static files (images, favicon) accessible publicly
+│   └── images/             # Images like hero, avatars, etc.
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx      # Root application layout (metadata, font, global CSS)
+│   │   ├── page.tsx        # Main landing page content
+│   │   └── globals.css     # Global Tailwind CSS directives and custom CSS
+│   └── components/         # Reusable UI components
+│       ├── Header.tsx
+│       ├── HeroSection.tsx
+│       ├── FeaturesSection.tsx
+│       ├── TestimonialSection.tsx
+│       ├── PricingSection.tsx
+│       └── Footer.tsx
+├── next.config.js          # Next.js configuration (including static export)
+├── package.json            # Dependencies and scripts
+├── postcss.config.js       # PostCSS configuration for Tailwind CSS
+├── tailwind.config.ts      # Tailwind CSS configuration
+├── tsconfig.json           # TypeScript configuration
+└── README.md               # This file!
+Deployment to GitHub Pages
+This project is configured for static site export, making it highly suitable for deployment to GitHub Pages.
+
+Ensure next.config.js has output: 'export' and images.unoptimized: true:
+
+JavaScript
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
+  }
+};
+
+module.exports = nextConfig;
+Build and Export Static Files:
+
+Bash
+
+npm run build && npm run export
 # or
-pnpm dev
-# or
-bun dev
-```
+yarn build && yarn export
+This will generate an out/ folder in your project's root directory.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Configure GitHub Pages:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Go to your repository on GitHub.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Click on the "Settings" tab.
 
-## Learn More
+In the left sidebar, click "Pages".
 
-To learn more about Next.js, take a look at the following resources:
+Under "Build and deployment", for "Source", select the main branch (or your primary branch) and the /out folder.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Click "Save".
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Your site should soon be live at a URL like https://USERNAME.github.io/your-repository-name/.
 
-## Deploy on Vercel
+Contribution
+Contributions are welcome! If you have suggestions or find bugs, please open an issue or submit a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+License
+This project is licensed under the MIT License.
