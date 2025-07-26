@@ -9,14 +9,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "ProdukX - Revolutionize Your Learning",
+  title: "Vapora - Revolutionize Your Learning",
   description: "An innovative platform designed to boost your productivity and understanding.",
   keywords: ["ProdukX", "learning", "innovation", "productivity", "platform"],
   authors: [{ name: "ProdukX Team" }],
   creator: "Your Name or Company",
   publisher: "Your Name or Company",
   openGraph: {
-    title: "ProdukX - Revolutionize Your Learning",
+    title: "Vapora - Revolutionize Your Learning",
     description: "An innovative platform designed to boost your productivity and understanding.",
     url: "https://www.yourdomain.com",
     siteName: "ProdukX",
